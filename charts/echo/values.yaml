@@ -12,7 +12,7 @@ name: echoapp1
 
 #Deployment
 image: us.gcr.io/ancient-edition-267617/echo #The echo application image, in this case in the google cloud. 
-tag: 0.1.0
+tag: 0.1.1
 
 #Deployment
 replicas: 2

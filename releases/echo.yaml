@@ -16,7 +16,7 @@ spec:
   values:
     image:
       repository: us.gcr.io/ancient-edition-267617/echo
-      tag: 0.1.0
+      tag: 0.1.1
     replicaCount: 2
 
 
