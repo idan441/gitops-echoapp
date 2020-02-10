@@ -76,7 +76,7 @@ name: echoapp1
 
 
 #Deployment
-image: gcr.io/careful-sphinx-267010/echo:0.1.0 #The echo application image, in this case in the google cloud. 
+image: us.gcr.io/ancient-edition-267617/echo:0.1.0 #The echo application image, in this case in the google cloud. 
 
 
 #Deployment
@@ -95,4 +95,3 @@ data:
 secret:
   mongodburl: mongodb://root:1234@mongodb:27017/echo #Put the url in its original format, while parsing the value helm will automatically encode it using base64 . 
 
-try: "works"
