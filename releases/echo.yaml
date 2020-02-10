@@ -3,7 +3,7 @@ apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
   name: echo-prod
-  namespace: prod
+  namespace: echo-prod #As created at the namespace file echoprod.yaml
   annotations:
     fluxcd.io/automated: "true"
     filter.fluxcd.io/chart-image: glob:* #This says that any new tag for the echo image on the GCR - will trigger Flux to do a pipeline. #I can also choose a dogma like "prod*" which says any tag starting with "prod" . 
@@ -18,4 +18,5 @@ spec:
       repository: us.gcr.io/ancient-edition-267617/echo #The echo application image in the GCR docker repository. 
       tag: 0.1.0
       #The abvoe tag will change automatically by Flux every new edition with +1 added to the number. 
+      #This tag fits to the tag in the helm chart. 
     replicaCount: 1 
