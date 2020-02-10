@@ -10,7 +10,7 @@ metadata:
 spec:
   releaseName: echo-prod
   chart:
-    git: git@github.com:idan441/gitops-echoapp.git
+    git: ssh://git@github.com:idan441/gitops-echoapp.git
     path: charts/echo
     ref: master
   values:
@@ -19,6 +19,8 @@ spec:
     replicaCount: 3
 
 
+
+### Official example - https://github.com/fluxcd/flux-get-started/blob/master/releases/ghost.yaml
 
 # ---
 # apiVersion: helm.fluxcd.io/v1
