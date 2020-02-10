@@ -12,7 +12,7 @@ spec:
   chart:
     git: git@github.com:idan441/gitops-echoapp.git #The GitHub repository - please make sure that Flux has access for it with deploy key. 
     path: charts/echo
-    ref: master
+    ref: master #Telling git to track the master branch. Combined with the annotation in the above lines - every commit (glob:*) to the master branch will trigger a CI/CD pipeline. 
   values:
     image:
       repository: us.gcr.io/ancient-edition-267617/echo #The echo application image in the GCR docker repository. 
