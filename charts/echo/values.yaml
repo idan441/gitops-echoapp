@@ -95,3 +95,4 @@ data:
 secret:
   mongodburl: mongodb://root:1234@mongodb:27017/echo #Put the url in its original format, while parsing the value helm will automatically encode it using base64 . 
 
+try: "works"
