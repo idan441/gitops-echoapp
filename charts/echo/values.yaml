@@ -76,7 +76,7 @@ name: echoapp1
 
 
 #Deployment
-image: gcr.io/careful-sphinx-267010/echo:0.1.2 #The echo application image, in this case in the google cloud. 
+image: gcr.io/careful-sphinx-267010/echo:0.1.0 #The echo application image, in this case in the google cloud. 
 
 
 #Deployment
