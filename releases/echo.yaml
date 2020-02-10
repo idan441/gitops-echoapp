@@ -16,7 +16,7 @@ spec:
   values:
     image:
       repository: us.gcr.io/ancient-edition-267617/echo:0.1.0
-    replicaCount: 3
+    replicaCount: 2
 
 
 
