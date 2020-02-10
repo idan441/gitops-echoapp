@@ -16,6 +16,6 @@ spec:
   values:
     image:
       repository: us.gcr.io/ancient-edition-267617/echo #The echo application image in the GCR docker repository. 
-      tag: 1.0.0
+      tag: 0.1.0
       #The abvoe tag will change automatically by Flux every new edition with +1 added to the number. 
     replicaCount: 1 
