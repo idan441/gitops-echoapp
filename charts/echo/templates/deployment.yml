@@ -30,7 +30,7 @@ spec: #Spec = specification = details and characteristics of the new object. Her
     spec: # Why are there two Spec fields? One above for details of the deployment, and this one here for details about the pod defined inside the deployment! It's defining an object inside another deployment object! 
       containers:
         - name: {{ .Values.name }}
-          image: {{ .Values.image }} #The image here is on google repository, I uploaded it. 
+          image: "{{ .Values.image }}:{{ .Values.tag }}" #The image here is on google repository, I uploaded it. 
           ports: #This is just for declaration, this tells the user on which ports the application will work. However - it won't open any port! It's like "EXPORT" row in a dockerfile! To really open the ports you need to use a "service" resource. 
             - containerPort: 3000 
         ### Here I define a reference to the ConfigMap and Secret resources. 
