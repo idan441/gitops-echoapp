@@ -72,7 +72,7 @@
 #This definition will give the same name to all resources mentioned in this chart. I did it like that to make things simplified and to save time - but sure you can give different names but it will require many variables... 
 #WHEN YOU WOULD LIKE AN NGINX-INGRESS SERVER TO PROXY TO THE SERVICE - REFER IT TO THE NAME OF THE SERVICE DEFINED HERE! ( because it will be the name of the clusterIP . ) 
 #Make sure this name is not used by any other resource at the k8s cluster! 
-name: echoapp
+name: echoapp1
 
 
 #Deployment
