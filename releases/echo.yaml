@@ -15,7 +15,7 @@ spec:
     ref: master
   values:
     image:
-      repository: us.gcr.io/ancient-edition-267617/echo:0.1.0
+      repository: us.gcr.io/ancient-edition-267617/echo:latest
     replicaCount: 2
 
 
